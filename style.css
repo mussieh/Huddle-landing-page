@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+body {
+    background-image: url(images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    height: 100vh;
+}
+
+.huddle-logo {
+    width: 200px;
+    margin-bottom: 40px;
+    position: relative;
+    left: 70px;
+    top: 50px;
+}
+
+.mockup-image {
+    width: 100%;
+}
+
+.main-section {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    left: 70px;
+    top: 100px;
+}
+
+.hero-section {
+    width: 30%;
+    margin: 50px;
+}
+
+.hero-header {
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.hero-detail {
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+.register-btn {
+    all: unset;
+    background-color: white;
+    font-size: 1rem;
+    color: hsl(257, 40%, 49%);
+    text-align: center;
+    border-radius: 40px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 140px;
+    height: 20px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.register-btn:hover {
+    color: white;
+    background-color: hsl(300, 69%, 71%);
+}
+
+.icon-container {
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-container:hover .fa-brands,
+.icon-container:hover {
+    border-color: hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    top: 100px;
+    right: 130px;
+}
+
+@media screen and (max-width: 1280px) {
+    .hero-section {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        background-image: url(images/bg-mobile.svg);
+    }
+
+    .huddle-logo {
+        width: 150px;
+        margin-bottom: 40px;
+        position: relative;
+        left: 15px;
+        top: 30px;
+    }
+
+    .hero-header {
+        font-size: 1.5rem;
+    }
+
+    .main-section {
+        position: relative;
+        left: 40px;
+        top: 45px;
+    }
+
+    .mockup-image {
+        width: 80%;
+    }
+
+    .hero-section {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        position: relative;
+        left: -40px;
+        top: 45px;
+    }
+
+    .hero-detail {
+        padding: 0 35px;
+    }
+
+    .register-btn {
+        width: 200px;
+        height: 20px;
+        margin-bottom: 50px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 0;
+        right: 0;
+        padding-bottom: 40px;
+    }
+}
